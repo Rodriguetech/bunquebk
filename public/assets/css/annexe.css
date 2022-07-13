@@ -1,0 +1,81 @@
+
+/***********************************************************************************
+ *	- PAGE HEADER
+ ***********************************************************************************/
+ 	
+	#page-header {
+		position: fixed;
+		padding: 15px 0;
+		background: #ffffff;
+		text-shadow: 0 1px 1px rgba(0,0,0,.2);
+		width:100%;
+		-webkit-transition:max-height .4s ease-out,padding .4s ease-out;
+		 transition:max-height .4s ease-out,padding .4s ease-out;
+		-webkit-box-shadow:0 -3px 12px 0 rgba(31,39,42,.08);
+		z-index:100;
+	}
+	
+	
+	#page-header h2 {
+		font-family:Objective,sans-serif;
+		font-size: 16px;
+		line-height: 1.4;
+		margin-bottom: 0;
+		color: #ffffff;
+		letter-spacing: .08em;
+		font-weight: 400;
+		margin-left:-15px;
+		margin-top:12px
+	}
+	
+	.number {
+		width:4.5%
+	}
+	
+	.finish {
+		border-radius: 30px; 
+		border:1px solid #a7a7a7; 
+		background-color:#fff; 
+		padding:30px 25px 30px 25px;
+		margin-top:150px
+	}
+	
+	#page-header img {
+		margin-left:-15px;
+		width:60%
+	}
+
+	@media (max-width: 767px) {
+		#page-header h2 {
+			font-size: 14px;
+			margin-top:10px
+		}
+		.number {
+			width:10.5%
+		}
+		.finish { 
+			margin-top:130px;
+			padding:20px 10px 20px 10px;
+		}
+		.fin { 
+			padding:20px;
+		}
+	}
+
+	@media (min-width: 768px) {
+		#page-header h2 {
+			font-size: 16px;
+		}
+		
+	}
+
+	@media (min-width: 1200px) {
+		#page-header h2 {
+			font-size: 18px;
+			line-height: 1.4;
+		}
+		.finish { 
+			margin-top:200px
+		}
+	}
+	

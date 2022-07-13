@@ -1,0 +1,137 @@
+
+	
+	/*
+	==================== DEMANDE
+	*/
+	
+	.bloc-demande{
+		padding: 10px 0 100px 0;
+	}
+	.or-spacer {
+		width: 100%;
+		position: relative;
+		margin-bottom: 20px;
+	}
+	
+	.or-spacer .mask {
+		overflow: hidden;
+		height: 20px;
+	}
+	
+	.or-spacer .mask:after {
+		content: '';
+		display: block;
+		margin: -25px auto 0;
+		width: 100%;
+		height: 25px;
+		border-radius: 125px / 4px;
+		box-shadow: 0 0 8px black;
+	}
+	
+	form.demande-credit .cd-select{
+		position: relative;
+		margin: 0;
+		padding: 0;
+	}
+	
+	form.demande-credit .cd-select::after {
+		font-family: fontAwesome;
+		content: '\f107';
+		position: absolute;
+		z-index: 1;
+		right: 20px;
+		top: 50%;
+		display: block;
+		font-size: 20px;
+		pointer-events: none;
+		color: #464391;
+		margin-top: -5px;
+	}
+	
+	@media (max-width: 767px) {
+		form.demande-credit .cd-select::after {
+			top: 60%;
+		}
+	}
+	
+	@media (min-width: 320px) {
+		form.demande-credit .cd-select::after {
+			top: 25%;
+		}
+	}
+	
+	form.demande-credit label{
+		font-weight: 400;
+		font-size: 14px;
+		color:#000000;
+	}
+	
+	form.demande-credit textarea,
+	form.demande-credit input[type="date"],
+	form.demande-credit select,
+	form.demande-credit input{
+		width: 100%;
+		margin: 12px 0;
+		resize: none;
+		font-size: 12px!important;
+		background: #fff;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		-o-appearance: none;
+		appearance: none;
+	}
+	
+	
+	
+	form.demande-credit input[type="date"]::-webkit-inner-spin-button,
+	form.demande-credit input[type="number"]::-webkit-inner-spin-button{
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		-o-appearance: none;
+		appearance: none;
+		cursor:pointer;
+	}	
+
+	form.demande-credit textarea:focus,
+	form.demande-credit input[type="date"]:focus,
+	form.demande-credit select:focus,
+	form.demande-credit input:focus{
+		outline: 0;
+		border-color: #ffb27f;
+	}
+	
+	form.demande-credit select option{
+		font-family:Objective,sans-serif;
+		font-size: 12px;
+	}
+	
+	form.demande-credit select::-webkit-input-placeholder,
+	form.demande-credit input::-webkit-input-placeholder{
+		font-weight: 300;
+		font-family:Objective,sans-serif;
+		font-size: 12px;
+	}
+	
+	form.demande-credit input[type="email"]{
+		text-transform: initial;
+	}
+	
+	
+	
+		form.demande-credit button i.fa-spinner{
+			font-size: 25px;
+		}
+		
+		form.demande-credit a:focus,
+		form.demande-credit a:active,
+		form.demande-credit button:focus,
+		form.demande-credit button:active{
+			outline: 0;
+		}
+	
+	form.demande-credit p{
+		margin: 0;
+		padding: 0;
+	}
