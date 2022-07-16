@@ -8,10 +8,26 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class EmpruntController extends AbstractController
 {
-    #[Route('/banque/emprunt', name: 'app_banque_emprunt')]
-    public function index(): Response
+    #[Route('/credit/credit-immobilier', name: 'app_banque_emprunt_immobilier')]
+    public function immobilier(): Response
     {
-        return $this->render('banque/emprunt/index.html.twig', [
+        return $this->render('banque/emprunt/immobilier.html.twig', [
+            'controller_name' => 'EmpruntController',
+        ]);
+    }
+
+    #[Route('/credit/credit-personnel', name: 'app_banque_emprunt_personnel')]
+    public function personnel(): Response
+    {
+        return $this->render('banque/emprunt/personnel.html.twig', [
+            'controller_name' => 'EmpruntController',
+        ]);
+    }
+
+    #[Route('/credit/credit-auto', name: 'app_banque_emprunt_auto')]
+    public function auto(): Response
+    {
+        return $this->render('banque/emprunt/auto.html.twig', [
             'controller_name' => 'EmpruntController',
         ]);
     }
