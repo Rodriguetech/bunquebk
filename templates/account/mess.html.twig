@@ -1,0 +1,101 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}Mon espace{% endblock %}
+
+{% block admin %}
+
+
+
+
+<h2>Traitement de la transaction en cours .....</h2>
+
+   <div id="progress"></div>
+
+
+
+<div class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Vérification </h4>
+        </div>
+        <div class="modal-body">
+          <p id="title"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+   
+
+{% endblock %}
+
+{% block script %}
+
+   <script>
+
+   
+
+     $(document).ready(function(){
+
+      $.ajax({
+
+        url: '{{ path('account_virement_transaction_ajax', {transation: idTransaction }) }}',
+
+        type: 'GET',
+
+        dataType: 'json',
+
+        success: function(data){
+
+           if(!data.state){
+            const perscent = data.pourcentage/100;
+
+            AnimateCircle("progress",perscent,"myModal");
+
+            $('#title').html(data.titre);
+
+           }
+
+      
+        }
+
+      });
+
+
+     });
+
+
+
+   </script>
+
+{% endblock %}
